@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>模板使用说明</title>
+
+    <link rel="stylesheet" href="http://resource.farbox.com/css/basic.css?version=1361111187">
+
+    <link rel="stylesheet" href="/template/css/post.css">
+</head>
+<body>
+
+<h1>模板使用说明</h1>
+
+<div id="content">
+
+    <h2>文章属性的基本标注</h2>
+
+<pre><code>url: farbox-structure
+date: 2013-1-17 17:30
+title: FarBox.com的技术构架
+</code></pre>
+
+    <h2>文章额外的属性标注</h2>
+
+    <pre><code>subtitle: 建筑
+cover:  /_image/2013-03-14/18-50-43.jpg
+cover_author: beggs
+intro:  匠者，唯心尔。这屋檐的边缘，未南飞的燕儿可以筑巢 .etc
+    </code></pre>
+
+    <p>其中，<code>subtitle</code>会在文章列表中，作为标题出现，<code>cover</code>为封面，如果未设定cover，则会取文章中的第一张图片作为封面。 <code>cover_author</code>为封面图的作者，鼠标放置于图片上，会显示做着。<code>intro</code>相当于文章列表中的摘要，如果没有设定，则会取文章正文的前面一部分作为摘要。</p>
+
+
+    <h2>site.md</h2>
+
+    <p>如果你在site.md中写入<code>ga_id: xxxxxxx</code>，则会启用Google的统计代码，其中<code>xxxxx</code>是形如<code>UA-36651986-4</code>的id。</p>
+
+
+
+    <h2>模板源码</h2>
+
+    <p>托管于Github, <a href="https://github.com/hepochen/farbox-blog">https://github.com/hepochen/farbox-blog</a></p>
+
+</div>
+
+
+{% include 'include/ga.html' %}
+
+
+
+
+
+
+
+</body>
+</html>

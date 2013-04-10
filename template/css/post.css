@@ -1,0 +1,17 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    line-height: 2.1;
+    font-size: 1em;
+    color: #555;
+    letter-spacing: 1px;
+    padding-bottom: 50px;
+    overflow-x: hidden;
+}
+
+
+
+#content{
+    margin-bottom: 90px;
+}
